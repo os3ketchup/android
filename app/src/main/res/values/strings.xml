@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Froton</string>
+    <string name="app_name">FrotonApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="hint_title">Заполните необходимые поля</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="confirm_password">Повторите пароль</string>
+    <string name="confirm">ГОТОВО</string>
 </resources>
