@@ -31,12 +31,16 @@
         android:text="@string/hint_title"
         android:textColor="@color/black"
         android:textSize="16sp"
+        android:paddingBottom="28dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/et_login"
+        app:boxStrokeWidth="0dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundColor="@color/grey_background"
+        android:layout_marginBottom="8dp"
         app:boxCornerRadiusTopStart="8dp"
         app:boxCornerRadiusTopEnd="8dp"
         app:boxCornerRadiusBottomStart="8dp"
@@ -58,9 +62,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/et_password"
+        app:boxStrokeWidth="0dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundColor="@color/grey_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         app:boxCornerRadiusTopStart="8dp"
         app:boxCornerRadiusTopEnd="8dp"
         app:boxCornerRadiusBottomStart="8dp"
@@ -81,7 +89,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/et_re_password"
+        app:boxStrokeWidth="0dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxBackgroundColor="@color/grey_background"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         app:boxCornerRadiusTopStart="8dp"
         app:boxCornerRadiusTopEnd="8dp"
         app:boxCornerRadiusBottomStart="8dp"
@@ -103,6 +115,7 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_confirm"
+        android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/base_blue"

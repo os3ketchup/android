@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.profileEdit.ProfileEditFragment">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:elevation="16dp"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="24dp"
+        android:layout_marginTop="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/av"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:contentDescription="@string/profile" />
+            <EditText
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:background="@null"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColorHint="@color/base_blue"
+                android:autofillHints="name" />
+            <EditText
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:background="@null"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColorHint="@color/black"
+                android:autofillHints="name" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
