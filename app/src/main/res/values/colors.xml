@@ -10,4 +10,5 @@
 
     <color name="base_blue">#0057FF</color>
     <color name="grey_background">#80CECECE</color>
+    <color name="hint_color">#666666</color>
 </resources>

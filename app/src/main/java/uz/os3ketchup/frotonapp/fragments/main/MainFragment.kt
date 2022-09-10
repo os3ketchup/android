@@ -1,34 +1,33 @@
-package uz.os3ketchup.frotonapp.fragments.login
+package uz.os3ketchup.frotonapp.fragments.main
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import uz.os3ketchup.frotonapp.R
-import uz.os3ketchup.frotonapp.databinding.FragmentLoginBinding
+import androidx.fragment.app.Fragment
+import uz.os3ketchup.frotonapp.databinding.FragmentMainBinding
 
 
-class LoginFragment : Fragment() {
-private var binding: FragmentLoginBinding? = null
+class MainFragment : Fragment() {
+   private  var binding:FragmentMainBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val fragmentBinding = FragmentLoginBinding.inflate(inflater,container,false)
         // Inflate the layout for this fragment
+        val fragmentBinding = FragmentMainBinding.inflate(inflater,container,false)
         binding = fragmentBinding
         return fragmentBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding?.btnConfirm?.setOnClickListener {
-            findNavController().navigate(R.id.profileEditFragment)
+        binding?.apply {
+            mainToolbar.setNavigationOnClickListener {
+                drawerLayout.open()
+            }
         }
     }
-
 
 }

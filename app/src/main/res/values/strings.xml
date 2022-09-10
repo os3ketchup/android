@@ -10,4 +10,16 @@
     <string name="profile">profile</string>
     <string name="name">Имя</string>
     <string name="username">\@username</string>
+    <string name="number_phone">Number Phone</string>
+    <string name="other_social_network">Other Social Web</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отменить</string>
+    <string name="description">Description</string>
+    <string name="chat_list">Чаты</string>
+    <string name="friends">Друзья</string>
+    <string name="settings">Настройки</string>
+    <string name="posts">Лента</string>
+    <string name="profile_image">profile image</string>
+    <string name="search">search</string>
+    <string name="floating_action_button">floating action button</string>
 </resources>
