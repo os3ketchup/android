@@ -22,4 +22,6 @@
     <string name="profile_image">profile image</string>
     <string name="search">search</string>
     <string name="floating_action_button">floating action button</string>
+    <string name="change">Изменить</string>
+    <string name="share">Поделиться</string>
 </resources>

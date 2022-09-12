@@ -34,6 +34,7 @@
 
     <EditText
         android:id="@+id/et_login"
+        android:textColor="@color/base_blue"
         android:padding="16dp"
         android:textColorHint="@color/hint_color"
         android:layout_width="match_parent"
@@ -47,6 +48,8 @@
 
     <EditText
         android:id="@+id/et_password"
+        android:inputType="textPassword"
+        android:textColor="@color/base_blue"
         android:textCursorDrawable="@drawable/cursor_drawable"
         android:textColorHint="@color/hint_color"
         android:layout_width="match_parent"
@@ -61,6 +64,8 @@
 
    <EditText
        android:id="@+id/et_confirm_password"
+       android:inputType="textPassword"
+       android:textColor="@color/base_blue"
        android:textCursorDrawable="@drawable/cursor_drawable"
        android:layout_width="match_parent"
        android:layout_height="?actionBarSize"

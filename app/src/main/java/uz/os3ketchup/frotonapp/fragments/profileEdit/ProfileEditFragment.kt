@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import uz.os3ketchup.frotonapp.MainActivity
+import uz.os3ketchup.frotonapp.R
 import uz.os3ketchup.frotonapp.databinding.FragmentProfileEditBinding
 
 
@@ -25,9 +27,7 @@ private lateinit var binding:FragmentProfileEditBinding
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnSave.setOnClickListener {
-            val intent = Intent(requireContext(),MainActivity::class.java)
-            startActivity(intent)
-            requireActivity().finish()
+            findNavController().navigate(R.id.action_profileEditFragment_to_myProfileFragment)
         }
     }
 

@@ -2,12 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragments.profileEdit.ProfileEditFragment">
-
+    tools:context=".fragments.myprofile.MyProfileFragment">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -32,29 +30,28 @@
                 android:src="@drawable/av" />
 
             <EditText
-                android:textCursorDrawable="@drawable/cursor_drawable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="name"
                 android:background="@null"
                 android:fontFamily="@font/montserrat_bold"
                 android:hint="@string/name"
-                android:textColor="@color/base_blue"
                 android:inputType="text"
+                android:textColor="@color/base_blue"
                 android:textColorHint="@color/grey_background"
-                 />
+                android:textCursorDrawable="@drawable/cursor_drawable" />
 
             <EditText
-                android:textCursorDrawable="@drawable/cursor_drawable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:autofillHints="username"
                 android:background="@null"
-                android:textColor="@color/black"
                 android:fontFamily="@font/montserrat_medium"
                 android:hint="@string/username"
                 android:inputType="text"
-                android:textColorHint="@color/grey_background" />
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_background"
+                android:textCursorDrawable="@drawable/cursor_drawable" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -64,21 +61,21 @@
         android:layout_margin="@dimen/side_margin"
         android:orientation="vertical">
 
-       <EditText
-           android:id="@+id/et_number_phone"
-           android:textColor="@color/base_blue"
-           android:textCursorDrawable="@drawable/cursor_drawable"
-           android:fontFamily="@font/montserrat_medium"
-           android:inputType="phone"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:background="@drawable/corner_radius_textfield"
-           android:padding="16dp"
-           android:layout_marginBottom="8dp"
-           android:hint="@string/number_phone"
-           android:gravity="center"
-           android:drawableStart="@drawable/phone_icon"
-           android:autofillHints="phone" />
+        <EditText
+            android:id="@+id/et_number_phone"
+            android:textColor="@color/base_blue"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:fontFamily="@font/montserrat_medium"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_radius_textfield"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/number_phone"
+            android:gravity="center"
+            android:drawableStart="@drawable/phone_icon"
+            android:autofillHints="phone" />
 
         <EditText
             android:id="@+id/et_description"
@@ -96,8 +93,6 @@
             android:gravity="center"
             android:drawableStart="@drawable/news_icon"
             android:autofillHints="phone" />
-
-
 
         <EditText
             android:id="@+id/et_other_social_network"
@@ -125,30 +120,29 @@
             android:background="@drawable/corner_radius" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_save"
+            android:id="@+id/btn_change"
             android:layout_marginBottom="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/save"
+            android:text="@string/change"
             android:fontFamily="@font/montserrat_medium"
             android:padding="14dp"
             app:backgroundTint="@null"
             android:textColor="@color/black"
             android:background="@drawable/corner_radius_button"
-            app:cornerRadius="8dp"/>
+            app:cornerRadius="8dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_cancel"
+            android:id="@+id/btn_share"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cancel"
+            android:text="@string/share"
             android:layout_marginTop="8dp"
             app:backgroundTint="@null"
             android:fontFamily="@font/montserrat_medium"
             android:padding="14dp"
             android:textColor="@color/black"
             android:background="@drawable/corner_radius_button"
-            app:cornerRadius="8dp"/>
+            app:cornerRadius="8dp" />
     </LinearLayout>
-
 </LinearLayout>
